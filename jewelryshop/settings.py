@@ -4,7 +4,6 @@ from pathlib import Path
 
 import os
 
-import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,7 +19,7 @@ SECRET_KEY = 'django-insecure-3%y3laftm62q0zaj+s7#p-xqq9(&#q+)s8)p-&#&bz*0$!xu$0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['bazaaro.onrender.com']
+ALLOWED_HOSTS = ['bazaaro.onrender.com','localhost','127.0.0.1']
 
 
 
@@ -78,8 +77,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-    },
-     'default': dj_database_url.config(default='postgres://localhost')
+    }
 }
 
 
